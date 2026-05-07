@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* 移动端适配：隐藏滚动条但保留功能 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 按钮点击态 */
+.btn-active:active {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
+/* 阴影规范 */
+.shadow-custom {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* 圆角规范 */
+.rounded-16 {
+  border-radius: 16px;
+}
+
+.rounded-32 {
+  border-radius: 32px;
+}
